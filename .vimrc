@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 set shell=/bin/bash
 set number
-
+set cursorline
 
 filetype off                  " required
 
@@ -68,10 +68,15 @@ let g:lsc_auto_map = {
  \  'ShowHover': 'K',
  \  'Completion': 'omnifunc',
  \}
+
 let g:lsc_enable_autocomplete  = v:true
 let g:lsc_enable_diagnostics   = v:false
 let g:lsc_reference_highlights = v:false
 let g:lsc_trace_level          = 'off'
 let g:ackprg = 'ag --vimgrep'
+
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.swp$', '\~$']
+let NERDTreeIgnore=['\.swp$', '\~$', '\.git$']
+
+"hi CursorLine     guibg=#222222 gui=none
+hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
