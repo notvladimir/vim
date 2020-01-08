@@ -73,4 +73,4 @@ let g:lsc_enable_diagnostics   = v:false
 let g:lsc_reference_highlights = v:false
 let g:lsc_trace_level          = 'off'
 let g:ackprg = 'ag --vimgrep'
-
+let NERDTreeShowHidden=1
